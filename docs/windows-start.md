@@ -23,28 +23,28 @@
 
 ## 第一次在 Windows 上开机
 
-**账号。** Blender 桌面软件和下述本机控制桥都可以直接使用。Codex 如已登录就沿用现有会话，首次使用可选「使用 ChatGPT 登录」。这是私有 GitHub 仓库，使用有访问权的 GitHub 账号在浏览器授权。密码、验证码、恢复码由本人在官方界面输入。优先使用 Windows 原生桌面和 PowerShell，以便 Codex 与桌面 Blender 访问相同目录。[Codex 登录](https://developers.openai.com/codex/auth/) · [GitHub CLI 登录](https://cli.github.com/manual/gh_auth_login)
+**账号。** Blender 桌面软件和下述本机控制桥都可以直接使用。Codex 如已登录就沿用现有会话，首次使用可选「使用 ChatGPT 登录」。仓库及 Release 公开，可直接浏览、克隆和下载。优先使用 Windows 原生桌面和 PowerShell，以便 Codex 与桌面 Blender 访问相同目录。[Codex 登录](https://developers.openai.com/codex/auth/)
 
 1. 在固定本地目录工作，例如用户目录下的 `YHRM`，仓库、下载原件和工作副本各用一个子目录。安装并启动一次官方 **Blender 5.3.0**。这是 Mac 重开过整机的版本。通常 Intel/AMD 电脑选 Windows x64，ARM 电脑选 ARM64。先确认本机系统类型。[Blender 5.3 官方 Windows 安装包](https://download.blender.org/release/Blender5.3/)
-2. 用浏览器登录 GitHub 后可直接查看仓库和 Release。采用命令行时先检查 Git、GitHub CLI 和 uv，缺哪项再装哪项，然后重新打开 PowerShell。以下示例用于首次在新目录接手；目录里已有文件时先检查现有副本。[GitHub CLI](https://cli.github.com/) · [uv 在 Windows 上的安装](https://docs.astral.sh/uv/getting-started/installation/)
+2. 采用下列 PowerShell 命令克隆仓库。先检查 Git 和 uv，缺哪项再安装，随后重新打开 PowerShell。目录里已有文件时，先检查现有副本。[Git for Windows](https://git-scm.com/download/win) · [uv 在 Windows 上的安装](https://docs.astral.sh/uv/getting-started/installation/)
 
    ```powershell
    # 按缺少的工具分别执行
    winget install --id Git.Git -e
-   winget install --id GitHub.cli -e
    winget install --id astral-sh.uv -e
    ```
 
    ```powershell
-   gh auth status
-   # 尚未以有权账号登录时执行
-   gh auth login --hostname github.com --web --git-protocol https
-   gh auth setup-git
    $projectRoot = Join-Path $env:USERPROFILE 'YHRM'
    New-Item -ItemType Directory -Force -Path $projectRoot | Out-Null
    Set-Location $projectRoot
-   gh repo clone zackzhang538-stack/yhrm-reman-excavator-restart repo
-   gh release download restart-v1.0.0 -R zackzhang538-stack/yhrm-reman-excavator-restart -p '*.blend' -p 'SHA256SUMS.txt' -D baseline
+   git clone https://github.com/zackzhang538-stack/yhrm-reman-excavator-restart.git repo
+   New-Item -ItemType Directory -Force -Path '.\baseline' | Out-Null
+   ```
+
+   在发布页下载 `YHRM-excavator-teaching-assembly-80a7.blend` 和 `SHA256SUMS.txt`，保存到项目根目录的 `baseline` 子目录。[整机下载页](https://github.com/zackzhang538-stack/yhrm-reman-excavator-restart/releases/tag/restart-v1.0.0)
+
+   ```powershell
    Get-FileHash '.\baseline\YHRM-excavator-teaching-assembly-80a7.blend' -Algorithm SHA256
    ```
 
