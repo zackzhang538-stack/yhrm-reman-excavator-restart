@@ -1,0 +1,37 @@
+{
+  "status": "PASS_INDEPENDENT_REOPEN",
+  "asset": "YHRM-excavator-teaching-assembly-80a7.blend",
+  "sha256": "80a792514b4a4baaafee2d658da0ed344efbbd3a73f8a5736b18bd1194d5b7e9",
+  "size_bytes": 335115771,
+  "blender_version": "5.3.0",
+  "active_scene": "YHRM · 原机斗臂与回转传动几何联动",
+  "active_objects": 8901,
+  "active_meshes": 8811,
+  "frame": 358,
+  "scene_count": 16,
+  "scenes": [
+    "YHRM · 原机斗臂与回转传动几何联动",
+    "动臂 A 口 · 固定分流块",
+    "动臂 A 口 · 左右固定支管",
+    "动臂 A 口 · 错层硬管试装",
+    "动臂 A 口 · 随动软管装机样点",
+    "动臂 A 左侧护板及 B 低位出口",
+    "动臂 B · 下弯分流与缸端",
+    "动臂 B · 固定管与四处支座",
+    "动臂 B · 缸筒纵管和夹座",
+    "动臂 B · 缸筒纵管和夹座.001",
+    "动臂B · 右恒长软管通道审阅",
+    "动臂B · 左缸接合与固定端参考",
+    "动臂主阀 · 三个通路位置",
+    "左B后降管 · 中位法兰分体",
+    "左B薄桥 · 贯通驱动与中心反扭",
+    "左动臂 B · 固定油路与护罩"
+  ],
+  "unpacked_dependencies": {
+    "libraries": [],
+    "images": [],
+    "fonts": [],
+    "sounds": []
+  },
+  "scope": "Original file integrity, native structure and resource availability. No new engineering acceptance."
+}
