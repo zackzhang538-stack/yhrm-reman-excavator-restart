@@ -1,0 +1,77 @@
+{
+  "machine_sha256": "80a792514b4a4baaafee2d658da0ed344efbbd3a73f8a5736b18bd1194d5b7e9",
+  "method": "Direct STEP/source STL fingerprints, prior BREP readback, and millimetre-local vertices compared in both directions with inherited offset.",
+  "scope": "The seven part checks are source fingerprints and nominal BREP/native vertex identity only. Full assembly fit, functional performance and manufacturing not covered.",
+  "source_parts": [
+    {
+      "id": "CYL03_R001",
+      "asset": "cad/CYL03_R001.step",
+      "origin": "Original project-authored design",
+      "sha256": "7967643db2a94f9f704fb36a9dc3e013252db6ccf7ebf84e787dc4f606b1db21",
+      "solids": 1,
+      "valid_brep": true,
+      "inherited_z_rebase_mm": 73.5,
+      "bidirectional_STL_to_native_vertex_distance_mm": 1.52587890625e-05
+    },
+    {
+      "id": "CYL03_R002",
+      "asset": "cad/CYL03_R002.step",
+      "origin": "Original project-authored design",
+      "sha256": "549cb3a6b3053a8640fef4b0911195c9e23f54f1399f4434c13e184a5877f51b",
+      "solids": 1,
+      "valid_brep": true,
+      "inherited_z_rebase_mm": 73.5,
+      "bidirectional_STL_to_native_vertex_distance_mm": 3.814697265625e-06
+    },
+    {
+      "id": "CYL03_B001",
+      "asset": "cad/CYL03_B001.step",
+      "origin": "Original project-authored design",
+      "sha256": "e752a5bd25d9660dc04520657d634a47812e6cef4f5688dcb32351990d569423",
+      "solids": 1,
+      "valid_brep": true,
+      "inherited_z_rebase_mm": 73.5,
+      "bidirectional_STL_to_native_vertex_distance_mm": 3.814697265625e-06
+    },
+    {
+      "id": "CYL03_B002",
+      "asset": "cad/CYL03_B002.step",
+      "origin": "Original project-authored design",
+      "sha256": "d5464a9f32aa5ff77cf70d783e61556f44bb381953879426f6d4b12af927d0f2",
+      "solids": 1,
+      "valid_brep": true,
+      "inherited_z_rebase_mm": 73.5,
+      "bidirectional_STL_to_native_vertex_distance_mm": 3.337860107421875e-06
+    },
+    {
+      "id": "CYL03_D001",
+      "asset": "cad/CYL03_D001.step",
+      "origin": "Original project-authored design",
+      "sha256": "379fbec561d09988e6de94c8a04ab53e5480986108213c440bce24295d52a828",
+      "solids": 1,
+      "valid_brep": true,
+      "inherited_z_rebase_mm": 73.5,
+      "bidirectional_STL_to_native_vertex_distance_mm": 0.0
+    },
+    {
+      "id": "CYL03_D002",
+      "asset": "cad/CYL03_D002.step",
+      "origin": "Original project-authored design",
+      "sha256": "06142b8c6af4774f30a1faef742551f0a65e9ec85cb67e8669b15dd51a5dcc82",
+      "solids": 1,
+      "valid_brep": true,
+      "inherited_z_rebase_mm": 73.5,
+      "bidirectional_STL_to_native_vertex_distance_mm": 0.0
+    },
+    {
+      "id": "CRANK_ONE_PIECE",
+      "asset": "cad/CRANK_ONE_PIECE.step",
+      "origin": "Original project-authored design",
+      "sha256": "ccb229de32f4e38995928964f51783f6afbee4f9e2beb76dede910a21769c5ec",
+      "solids": 1,
+      "valid_brep": true,
+      "inherited_z_rebase_mm": 0,
+      "bidirectional_STL_to_native_vertex_distance_mm": 0.0
+    }
+  ]
+}

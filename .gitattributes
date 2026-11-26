@@ -1,0 +1,2 @@
+# Preserve the byte-exact source STEP files across checkouts.
+*.step binary
